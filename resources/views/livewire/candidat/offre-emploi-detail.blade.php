@@ -269,7 +269,7 @@
                                             <label class="form-label">Sexe</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="fa fa-venus-mars"></i></span>
-                                                <select wire:model.defer="sexe_candidat" class="form-select">
+                                                <select wire:model.defer="sexe_candidat" class="form-control">
                                                     <option value="">-- Sélectionner --</option>
                                                     <option value="M">Homme</option>
                                                     <option value="F">Femme</option>
@@ -332,7 +332,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-text"><i
                                                         class="fa fa-graduation-cap"></i></span>
-                                                <select wire:model.defer="niveau_etude_id" class="form-select">
+                                                <select wire:model.defer="niveau_etude_id" class="form-control">
                                                     <option value="">-- Sélectionner --</option>
                                                     @foreach ($niveaux_etude as $label)
                                                         <option value="{{ $label->id }}">
@@ -351,7 +351,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="fa fa-chart-bar"></i></span>
                                                 <select wire:model.defer="niveau_global_experience_id"
-                                                    class="form-select">
+                                                    class="form-control">
                                                     <option value="">-- Sélectionner --</option>
                                                     @foreach ($niveaux_experience as $label)
                                                         <option value="{{ $label->id }}">
@@ -369,7 +369,7 @@
                                             <label class="form-label">Métier</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="fa fa-suitcase"></i></span>
-                                                <select wire:model.defer="metier_id" class="form-select">
+                                                <select wire:model.defer="metier_id" class="form-control">
                                                     <option value="">-- Sélectionner --</option>
                                                     @foreach ($metiers as $label)
                                                         <option value="{{ $label->id }}">{{ $label->nom_metier }}

@@ -47,7 +47,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    {{ $niveaux->links() }}
+
                                 @empty
                                     <tr>
                                         <td colspan="2" class="text-center text-muted">Aucun type de contrat trouvé.</td>

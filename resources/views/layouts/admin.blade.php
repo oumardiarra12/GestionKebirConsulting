@@ -105,7 +105,7 @@
 {{-- <script src="{{asset('assets/js/dashboard/dashboard-1.js')}}" defer></script> --}}
 <!-- ck-editor -->
 {{-- <script src="{{asset('assets/vendor/ckeditor/ckeditor.js')}}" defer></script> --}}
-<script src="{{asset('assets/vendor/owl-carousel/owl.carousel.js')}}" defer></script>
+
 
 <script src="{{asset('assets/vendor/global/global.min.js')}}" defer></script>
 {{-- <script src="{{asset('assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script> --}}
@@ -113,6 +113,7 @@
 {{-- <script src="{{asset('assets/js/plugins-init/select2-init.js')}}" defer></script> --}}
 <script src="{{asset('assets/js/custom.min.js')}}" defer></script>
 <script src="{{asset('assets/js/dlabnav-init.js')}}" defer></script>
+<script src="{{asset('assets/vendor/owl-carousel/owl.carousel.js')}}" defer></script>
 
 {{--
 <script>

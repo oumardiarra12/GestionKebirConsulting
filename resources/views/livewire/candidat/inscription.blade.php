@@ -164,7 +164,7 @@
                                         <div class="col-lg-6 col-md-12">
                                             <label class="form-label fw-semibold"><i
                                                     class="fas fa-venus-mars me-1"></i>Sexe</label>
-                                            <select wire:model.lazy="sexe_candidat" class="form-select">
+                                            <select wire:model.lazy="sexe_candidat" class="form-control">
                                                 <option value="">Sélectionnez...</option>
                                                 <option value="M">Masculin</option>
                                                 <option value="F">Féminin</option>

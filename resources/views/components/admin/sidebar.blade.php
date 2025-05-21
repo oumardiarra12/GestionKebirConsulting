@@ -56,7 +56,6 @@
                 <li><a href="{{route('langues.index')}}">Langues</a></li>
                 <li><a href="{{route('secteur.index')}}">Secteurs</a></li>
                 <li><a href="{{route('niveauetudes.index')}}">Niveau d'Etudes</a></li>
-                <li><a href="{{route('etapes.index')}}">Les Etapes de Recrutement</a></li>
                 <li><a href="{{route('niveauexperience.index')}}">Les Niveaux d'Experiences</a></li>
                 <li><a href="{{route('metiers.index')}}">Les Metiers</a></li>
                 <li><a href="{{route('disponibilites.index')}}">Les Disponibilites</a></li>
