@@ -96,9 +96,9 @@ class OffreEmploiDetail extends Component
             'lettre_motivation' => $this->lettre_motivation,
         ]);
 
-        session()->flash('success', 'Candidature enregistrée avec succès !');
-        $this->resetForm();
 
+        $this->resetForm();
+        session()->flash('success', 'Votre candidature a été envoyée avec succès.');
         return redirect()->route('home');
     }
 

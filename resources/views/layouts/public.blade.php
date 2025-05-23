@@ -34,6 +34,8 @@
     <!-- Main Styles -->
     <link rel="stylesheet" href="{{ asset('/frontend/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('/frontend/assets/css/skin/skin-1.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/assets/css/toastr.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('frontend/assets/css/sweetalert2.min.css') }}">
 
     @livewireStyles
 </head>
@@ -61,5 +63,26 @@
     <script src="{{ asset('/frontend/assets/js/dz.carousel.js') }}" defer></script>
     <script src="{{ asset('/frontend/assets/js/dz.ajax.js') }}" defer></script>
     <script src="{{ asset('/frontend/assets/js/custom.js') }}" defer></script>
+     <script src="{{ asset('frontend/assets/js/toastr.min.js') }}" defer></script>
+      <script src="{{ asset('frontend/assets/js/sweetalert2.all.min.js') }}" defer></script>
+    <script>
+    @if (session('success'))
+        toastr.success("{{ session('success') }}");
+    @endif
+
+    @if (session('error'))
+        toastr.error("{{ session('error') }}");
+    @endif
+</script>
+<script>
+    @if (session('success'))
+        Swal.fire({
+            icon: 'success',
+            title: 'Succès',
+            text: "{{ session('success') }}",
+            confirmButtonText: 'Fermer'
+        });
+    @endif
+</script>
 </body>
 </html>

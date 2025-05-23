@@ -50,13 +50,13 @@
         @if ($activeTab === 'info')
             <livewire:candidat.profile.information-personnelle  :candidat="$candidat" :wire:key="'info-'.$candidat->id" />
         @elseif ($activeTab === 'critiere')
-            <livewire:candidat.profile.critiere :candidat="$candidat" :wire:key="'critiere-'.$candidat->id" />
+            <livewire:candidat.profile.critiere :candidat="$candidat" ?? '' :wire:key="'critiere-'.$candidat->id" />
         @elseif ($activeTab === 'competences')
-            <livewire:candidat.profile.competences :candidat="$candidat" :wire:key="'competences-'.$candidat->id" />
+            <livewire:candidat.profile.competences :candidat="$candidat" ?? '' :wire:key="'competences-'.$candidat->id" />
         @elseif ($activeTab === 'donnees')
-            <livewire:candidat.profile.donnees :candidat="$candidat" :wire:key="'donnees-'.$candidat->id" />
+            <livewire:candidat.profile.donnees :candidat="$candidat" ?? '' :wire:key="'donnees-'.$candidat->id" />
         @elseif ($activeTab === 'options')
-            <livewire:candidat.profile.options :candidat="$candidat" :wire:key="'options-'.$candidat->id" />
+            <livewire:candidat.profile.options :candidat="$candidat" ?? '' :wire:key="'options-'.$candidat->id" />
         @endif
     </div>
 </div>

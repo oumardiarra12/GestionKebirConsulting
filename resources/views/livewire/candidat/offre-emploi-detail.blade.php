@@ -19,6 +19,7 @@
     <!-- Banner End -->
     <!-- Blog Details -->
     <section class="content-inner position-relative mt-4">
+
         <div class="container">
             <div class="row ">
                 <div class="col-xl-8 col-lg-8 ">
@@ -31,7 +32,7 @@
                                 <h3 class="dz-title">{{ $emploi->titre_emplois }}<span class="job-duration">/
                                         {{ $emploi->typecontrat->nom_type_contrat ?? 'N/A' }}</span> </h3>
                                 <p class="job-address"><i
-                                        class="fa-solid fa-location-dot text-primary"></i>{{ $emploi->lieu_emplois }}
+                                        class="fa-solid fa-location-dot text-primary"></i>{{ $emploi->region->nom_regions }}
                                 </p>
                                 <div class="income">
                                     @if ($dateExpiree)

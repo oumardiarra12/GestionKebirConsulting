@@ -54,7 +54,7 @@ class Competences extends Component
             'nom_langue' => $langue->nom_langue,
             'niveau' => $langue->pivot->niveau,
         ];
-    })->toArray();
+    })->toArray() ?? [];
 }
 
 
